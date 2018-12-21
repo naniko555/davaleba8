@@ -1,0 +1,241 @@
+@import 'color';
+@import 'reset';
+
+%verticalCenter{
+	display:flex;
+	align-items:center;
+}
+
+%fullCenter{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+%padding-left-right{
+	padding-left:5%;
+	padding-right:5%;
+}
+
+
+/////////////////////////////////////////////
+header{
+	display:flex;
+	justify-content:space-around;
+	@extend %verticalCenter;
+	img{
+	display:inline-block;
+	}
+
+	ul{
+	//@extend %verticalCenter;
+	justify-content:space-between;
+
+
+		li{
+		display:inline-block;
+
+		}
+	
+	}
+//////////////////////////////////////
+section{
+	p{
+		img{
+			align:left;
+		}
+	
+	}
+}
+
+
+	.icons{
+	@extend %verticalCenter;
+		span{
+		display:inline-block;
+		margin-right:10px;
+			
+		}
+		span:nth-child(2){
+			margin-left:10px;
+			margin-right:10px;
+		}
+		span:nth-child(4){
+			margin-left:10px;
+			margin-right:10px;
+		}
+		span:nth-child(6){
+			margin-left:10px;
+			margin-right:10px;
+		}
+		span:last-child{
+			a i{
+			color:red;
+			}
+		}
+
+	}//end of icons
+
+}
+//////////////////////////////////////
+.titleBar{
+	@extend %verticalCenter;
+	@extend %padding-left-right;
+
+	justify-content:space-between;
+	background-color:$titleBarColor;
+	height:100px;
+	
+	.titleBar-left{
+		span:first-child{
+		color:$linkColor;
+		}
+		span:last-child{
+		color:white;
+		}
+	}
+	.titleBar-right{
+	}
+}
+/////////////////////
+.middleWrapper{
+	@extend %padding-left-right;
+	padding-top:30px;
+	padding-bottom:30px;
+	.dateBar{
+
+	//@include %fullCenter;  ratom ar mushaobs??
+			display:inline-block;
+			width:70px;
+			height:70px;
+
+			display:flex;
+		    align-items:center;
+		    justify-content:center;
+		    flex-direction:column;
+
+			border:solid;
+			border-color:$titleBarColor;
+
+			p:first-child{
+				font-size:25px;
+			}
+			p:last-child{
+				font-size:15px;
+
+			}
+	}
+
+}
+.typolab{
+	color:blue;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+///////////////////////////////
+.footerBar{
+	@extend %verticalCenter;
+	@extend %padding-left-right;
+	justify-content:space-between;
+	background-color:$titleBarColor;
+	height:100px;
+
+	.footerBar-right{
+		display:flex;
+		justify-content:space-around;
+		width:25%;
+
+		a:nth-child(1){
+		background-color:#1a4fa5;
+			i{
+			color:white;
+			}
+			span{
+			color:white;
+			}
+		}
+		 a:nth-child(2){
+			background-color:white;
+			i{
+				color:red;
+			}
+		}
+		 a:nth-child(3){
+			background-color:#5582cc;
+			i{
+			color:white;
+			}
+			span{
+			color:white;
+			}
+		}
+	
+	}//end of footerBar-right
+	
+} //end of footerBar
+
+
+/////////////////////////////
+.bottomSection{
+	background-color:$bottomSectionColor;
+	@extend %padding-left-right;
+	.bottomSection-wrapper{
+
+		margin-top:30px;
+		margin-botom:10px;
+		display:flex;
+		justify-content:space-around;
+
+		.left-wrapper{
+				p:first-child{
+				color:blue;
+				}
+			margin-left:5%;
+			background-color:#eff3f9;
+			width:40%;
+				.image-text-wrapper{
+				display:flex;
+					img{
+					display:inline-block;
+					}
+					p{
+					display:inline-block;
+					}
+				}
+		}
+		.right-wrapper{
+			p:first-child{
+			color:blue;
+			}
+		margin-right:5%;
+		background-color:#eff3f9;
+		width:40%;
+			.image-text-wrapper{
+			display:flex;
+				img{
+				display:inline-block;
+				}
+				p{
+				display:inline-block;
+				}
+
+			}
+		}
+	}//end of bottomSection-wrapper
+
+}//end of  bottomSection
+
+footer{
+	display:flex;
+	justify-content:space-between;
+	@extend %verticalCenter;
+	height:50px;
+	padding-left:13%;
+	padding-right:13%;
+
+		p{
+		display:inline-block;
+		}
+
+}

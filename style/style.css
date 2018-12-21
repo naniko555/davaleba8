@@ -1,0 +1,171 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+header, header .icons, .titleBar, .footerBar, footer {
+  display: flex;
+  align-items: center; }
+
+.titleBar, .middleWrapper, .footerBar, .bottomSection {
+  padding-left: 5%;
+  padding-right: 5%; }
+
+header {
+  display: flex;
+  justify-content: space-around; }
+  header img {
+    display: inline-block; }
+  header ul {
+    justify-content: space-between; }
+    header ul li {
+      display: inline-block; }
+  header section p img {
+    align: left; }
+  header .icons span {
+    display: inline-block;
+    margin-right: 10px; }
+  header .icons span:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px; }
+  header .icons span:nth-child(4) {
+    margin-left: 10px;
+    margin-right: 10px; }
+  header .icons span:nth-child(6) {
+    margin-left: 10px;
+    margin-right: 10px; }
+  header .icons span:last-child a i {
+    color: red; }
+
+.titleBar {
+  justify-content: space-between;
+  background-color: #b9cce5;
+  height: 100px; }
+  .titleBar .titleBar-left span:first-child {
+    color: blue; }
+  .titleBar .titleBar-left span:last-child {
+    color: white; }
+
+.middleWrapper {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .middleWrapper .dateBar {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid;
+    border-color: #b9cce5; }
+    .middleWrapper .dateBar p:first-child {
+      font-size: 25px; }
+    .middleWrapper .dateBar p:last-child {
+      font-size: 15px; }
+
+.typolab {
+  color: blue;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.footerBar {
+  justify-content: space-between;
+  background-color: #b9cce5;
+  height: 100px; }
+  .footerBar .footerBar-right {
+    display: flex;
+    justify-content: space-around;
+    width: 25%; }
+    .footerBar .footerBar-right a:nth-child(1) {
+      background-color: #1a4fa5; }
+      .footerBar .footerBar-right a:nth-child(1) i {
+        color: white; }
+      .footerBar .footerBar-right a:nth-child(1) span {
+        color: white; }
+    .footerBar .footerBar-right a:nth-child(2) {
+      background-color: white; }
+      .footerBar .footerBar-right a:nth-child(2) i {
+        color: red; }
+    .footerBar .footerBar-right a:nth-child(3) {
+      background-color: #5582cc; }
+      .footerBar .footerBar-right a:nth-child(3) i {
+        color: white; }
+      .footerBar .footerBar-right a:nth-child(3) span {
+        color: white; }
+
+.bottomSection {
+  background-color: #dee3ea; }
+  .bottomSection .bottomSection-wrapper {
+    margin-top: 30px;
+    margin-botom: 10px;
+    display: flex;
+    justify-content: space-around; }
+    .bottomSection .bottomSection-wrapper .left-wrapper {
+      margin-left: 5%;
+      background-color: #eff3f9;
+      width: 40%; }
+      .bottomSection .bottomSection-wrapper .left-wrapper p:first-child {
+        color: blue; }
+      .bottomSection .bottomSection-wrapper .left-wrapper .image-text-wrapper {
+        display: flex; }
+        .bottomSection .bottomSection-wrapper .left-wrapper .image-text-wrapper img {
+          display: inline-block; }
+        .bottomSection .bottomSection-wrapper .left-wrapper .image-text-wrapper p {
+          display: inline-block; }
+    .bottomSection .bottomSection-wrapper .right-wrapper {
+      margin-right: 5%;
+      background-color: #eff3f9;
+      width: 40%; }
+      .bottomSection .bottomSection-wrapper .right-wrapper p:first-child {
+        color: blue; }
+      .bottomSection .bottomSection-wrapper .right-wrapper .image-text-wrapper {
+        display: flex; }
+        .bottomSection .bottomSection-wrapper .right-wrapper .image-text-wrapper img {
+          display: inline-block; }
+        .bottomSection .bottomSection-wrapper .right-wrapper .image-text-wrapper p {
+          display: inline-block; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding-left: 13%;
+  padding-right: 13%; }
+  footer p {
+    display: inline-block; }
